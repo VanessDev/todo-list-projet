@@ -5,10 +5,10 @@
 }
 
 body {
-    background-image: url("../img/background-site.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover; 
+  background-image: url("../img/background-site.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover; 
 }
 
 /***********************************************************************
@@ -16,13 +16,13 @@ body {
 ***********************************************************************/
 
 .header-site {
-    background-color: rgba(101, 81, 215, 0.7);
-    height: 5vh;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  background-color: rgba(101, 81, 215, 0.7);
+  height: 5vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header-site-title {
@@ -52,6 +52,7 @@ body {
   gap: 20px; /* permet de définir l'espacement minimum des lignes et des colonne */
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .card { /* Il controle l'arriere plan de la carte */
@@ -112,9 +113,27 @@ body {
 ***********************************************************************/
 
 .footer-site {
-    background-color: rgba(255, 255, 255, 0.3);
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+/************************************************************************
+************************** MEDIA QUERIES ********************************
+************************************************************************/
+
+@media (max-width: 610px) {
+
+  .header-site,
+  .footer-site {
+    padding: 5%;
+  }
+
+  .main-site {
+    height: auto;
+  }
+
 }
