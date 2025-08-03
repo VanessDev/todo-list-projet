@@ -25,6 +25,17 @@ body {
   align-items: flex-start;
 }
 
+
+/* <!-- Ajout de la classe paper-style pour appliquer le style "feuille blanche" à la colonne --> */
+.paper-style {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+  opacity: 0.95;
+}
+
 .header-site-title {
   color: rgb(255, 255, 255);
 }

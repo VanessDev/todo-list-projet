@@ -27,9 +27,9 @@ require_once 'logic.php';
         <section class="card-container">
             <!-- Carte : Colonne des tâches professionnelles -->
             <div class="card" style="background-image: url('img/background-pro.jpg');">
-                <div class="card-overlay">
+                <!-- Ajout de la classe paper-style pour appliquer le style "feuille blanche" à la colonne -->
+                <div class="card-overlay paper-style">
                     <h3>Liste de tâches Pro</h3>
-
                     <!-- Formulaire pour ajouter une nouvelle tâche -->
                     <form method="post" class="add-form">
                         <input type="text" name="task_pro" placeholder="Nouvelle tâche..." required>
@@ -65,9 +65,9 @@ require_once 'logic.php';
             </div>
             <!-- Carte : Colonne des tâches personnelles -->
             <div class="card" style="background-image: url('img/background-perso.jpg');">
-                <div class="card-overlay">
+                <!-- Ajout de la classe paper-style pour appliquer le style "feuille blanche" à la colonne -->
+                <div class="card-overlay paper-style">
                     <h3>Liste de tâches Perso</h3>
-
                     <!-- Formulaire pour ajouter une nouvelle tâche perso -->
                     <form method="post" class="add-form">
                         <input type="text" name="task_perso" placeholder="Nouvelle tâche perso..." required>
