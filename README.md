@@ -48,3 +48,8 @@ Créer une to-do list :
 
 ## 📁 Structure du projet
 
+## Amélioration de l'interface
+
+- Ajout d'un style visuel type "feuille de papier" pour chaque colonne de tâches (Pro et Perso) afin de respecter la maquette de référence.
+- Le style est défini via la classe `.paper-style` dans `style.css` et appliqué à chaque carte (div `.card`).
+- Cette amélioration permet de mieux distinguer visuellement chaque liste dans l'interface.
