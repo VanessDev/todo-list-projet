@@ -1,22 +1,24 @@
-    <?php
-    // On démarre la session pour stocker les tâches utilisateur
-    session_start();
+<?php
+// On démarre la session pour stocker les tâches utilisateur
+session_start();
 
-    // On sépare la logique PHP dans un fichier dédié
-    require_once 'logic.php';
-    ?>
+// On sépare la logique PHP dans un fichier dédié
+require_once 'logic.php';
+?>
 
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Organis'Tâches</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="fr">
 
-        <!-- Fichier CSS externe pour le style du projet -->
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Organis'Tâches</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fichier CSS externe pour le style du projet -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
 
     <!-- Inclusion de l'en-tête du site (menu, logo, etc.) -->
     <?php include 'header.php'; ?>
@@ -31,14 +33,14 @@
                     <!-- Formulaire pour ajouter une nouvelle tâche -->
                     <form method="post" class="add-form">
                         <input type="text" name="task_pro" placeholder="Nouvelle tâche..." required>
-                        
+
                         <!-- Menu déroulant pour sélectionner la priorité -->
                         <select name="priority_pro">
                             <option value="high">Urgent</option>
                             <option value="medium">Moins urgent</option>
                             <option value="low">À faire plus tard</option>
                         </select>
-                        
+
                         <button type="submit" name="add_pro_task">Ajouter</button>
                     </form>
 
@@ -67,5 +69,6 @@
     <!-- Inclusion du pied de page -->
     <?php include 'footer.php'; ?>
 
-    </body>
-    </html>
+</body>
+
+</html>
