@@ -1,13 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-image: url("../img/background-site.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover; 
+  background-image: url("../img/background-site.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover; 
 }
 
 /***********************************************************************
@@ -15,21 +16,21 @@ body {
 ***********************************************************************/
 
 .header-site {
-    background-color: rgba(101, 81, 215, 0.7);
-    height: 8vh;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  background-color: rgba(101, 81, 215, 0.7);
+  height: 8vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .header-site-title {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .header-site-subtitle {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 /***********************************************************************
@@ -37,75 +38,10 @@ body {
 ***********************************************************************/
 
 .main-site {
-    height: 80vh;
-}
-
-/***************** Cartes des listes de taches *************************/
-
-.card-container {
+  height: 80vh;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* permet de définir l'espacement minimum des lignes et des colonne */
   justify-content: center;
+  align-items: center;
 }
 
-.card { /* Il controle l'arriere plan de la carte */
-  width: 280px;
-  height: 360px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  overflow: hidden; /* cache tout ce qui dépasse de l'élément */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.card-overlay {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  height: 100%;
-  overflow-y: auto; /* met une barre de défilement verticale au besoin */
-}
-
-.task-item {
-  padding: 4px;
-  margin-bottom: 5px;
-}
-
-.task-item.low { /* tache peu impotante */
-  color: #1c1c1c;
-}
-
-.task-item.medium { /* tache importante */
-  color: #e67e22;
-  font-weight: bold;
-}
-
-.task-item.high { /* tache urgente ou tres importante*/
-  color: #c0392b;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.add-form {
-  text-align: center;
-  margin: 20px;
-}
-
-.add-form input,
-.add-form select,
-.add-form button {
-  margin: 5px;
-  padding: 6px;
-}
-
-/***********************************************************************
-************************** PIEDS DE PAGE *******************************
-***********************************************************************/
-
-.footer-site {
-    background-color: rgba(255, 255, 255, 0.3);
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/***************** Cartes des listes de taches *
