@@ -1,0 +1,104 @@
+/* === STRUCTURE GÉNÉRALE === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.main-site {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* === BLOC DE LA LISTE === */
+.card-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+}
+
+/* === TITRE DE SECTION === */
+.card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* === FORMULAIRE === */
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.add-form input[type="text"] {
+  flex: 2;
+  padding: 10px;
+}
+
+.add-form select {
+  flex: 1;
+  padding: 10px;
+}
+
+.add-form button {
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* === AFFICHAGE DES TÂCHES === */
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+/* === COULEUR PAR PRIORITÉ === */
+.task-item.high label {
+  color: red;
+  font-weight: bold;
+}
+
+.task-item.medium label {
+  color: orange;
+}
+
+.task-item.low label {
+  color: green;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .add-form {
+    flex-direction: column;
+  }
+
+  .add-form input,
+  .add-form select,
+  .add-form button {
+    width: 100%;
+  }
+}
